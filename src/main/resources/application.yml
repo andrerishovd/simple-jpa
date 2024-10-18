@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: simple-jpa
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: postgresql
+    show-sql: true
+  Flyway:
+    enabled: true
+    locations: classpath:db.migration
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/appdb
+    username: myUserName
+    password: myPassword
